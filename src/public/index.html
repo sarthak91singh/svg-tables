@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="/">
+</head>
+<body ng-controller="AppCtrl" ng-switch="view">
+	<div class="row">
+	    <div class="col-sm-12 text-center">
+	        <button id="btnSearch" class="btn btn-primary btn-md center-block navBtn" ng-click="changeView('svgView')">SVG Image View</button>
+	         <button id="btnClear" class="btn btn-danger btn-md center-block navBtn" ng-click="changeView('employeeView')">Employee Info View</button>
+	     </div>
+	</div>
+  	<svg-image-view ng-switch-when="svgView"></svg-image-view>
+  	<employee-info-view ng-switch-when="employeeView"></employee-info-view>
+</body>
+</html>

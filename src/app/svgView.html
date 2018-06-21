@@ -1,0 +1,42 @@
+<main>
+ <div class="container">
+  <h2>SVG Images Table</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p> 
+
+  <table class="table table-bordered">
+    <thead>
+      <tr class="row">
+        <th class="col-md-6">SVG Image</th>
+        <th class="col-md-6">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="row" ng-click="app.colorComponent($event)">
+        <td class="col-md-6">
+        	<svg height="140" width="500">
+        		<text x="80" y="25" font-family="Verdana" font-size="20" fill="blue">Svg tag begins.</text>
+			  <ellipse cx="200" cy="80" rx="100" ry="50" fill="white" stroke="purple" stroke-width="2" class="svgShape"/>
+			  <text x="120" y="80" font-family="Arial" font-size="35" fill="blue">Ellipse</text>
+			</svg>
+        </td>
+        <td class="text-left col-md-6">This is an ellipse SVG image. It's components/tags are labelled. Click on the element to COLOR it !!</td>
+      </tr>
+      <tr class="row" ng-click="app.colorComponent($event)">
+        <td class="col-md-6">
+        	<svg xmlns="http://www.w3.org/2000/svg">
+        		<text x="40" y="20" font-family="Verdana" font-size="20" fill="blue">Svg tag begins.</text>
+			  <g>
+			    <rect x="0" y="30" width="250" height="70" fill="white" stroke="white" stroke-width="2" class="svgShape"></rect>
+			    <text x="20" y="70" font-family="Verdana" font-size="35" fill="blue">Rectangle</text>
+			  </g>
+			</svg>
+        </td>
+        <td class="text-left col-md-6">This is an rectangle SVG image. It's components/tags are labelled. Click on the element to COLOR it !!</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</main>
+<footer>
+  <!-- <a ng-href="{{app.url}}">Webpack Angular Starter</a> -->
+</footer>

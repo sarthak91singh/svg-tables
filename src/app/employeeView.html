@@ -1,0 +1,59 @@
+<main>
+  <h2>Employee-Department Table</h2>
+  
+    <p>Select a particular employee and "drag-n-drop" it to some other department !!</p>
+    <p>To change employee's name inline, just "DOUBLE-CLICK" it !!</p>
+   
+
+  <div class="table-container row">
+    <table class="table table-bordered col-sm-11 ">
+      <thead>
+          <tr class="row">
+              <th class="col-sm-4 text-center">Department Name</th>
+              <th class="col-sm-8 text-center">Employees</th>
+          </tr>
+      <tbody>
+          <tr class="row">
+              <td class="col-sm-4 text-center">
+                  Finance
+              </td>
+              <td class="col-sm-8">
+                  <table class="col-sm-11">
+                    <tbody>
+                      <tr draggable="true" class="employee" ng-dblclick="app.editContent($event)">
+                        <td>Diego Maradona</td>
+                      </tr>
+                      <tr draggable="true" class="employee" ng-dblclick="app.editContent($event)">
+                        <td >David Villa</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </td>
+          </tr>
+          <tr class="row">
+              <td class="col-sm-4">
+                  Testing
+              </td>
+              <td class="col-sm-8">
+                  <table class="col-sm-11">
+                    <tbody>
+                      <tr draggable="true" class="employee">
+                        <td ng-dblclick="app.editContent($event)">Christiano Ronaldo</td>
+                      </tr>
+                      <tr draggable="true" class="employee">
+                        <td ng-dblclick="app.editContent($event)">David Beckham</td>
+                      </tr>
+                      <tr draggable="true" class="employee">
+                        <td ng-dblclick="app.editContent($event)">Lionel Messi</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<footer>
+  
+</footer>
